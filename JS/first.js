@@ -4,6 +4,7 @@
 //  const age = 35;
 //  const language = "JAVASCRIPT";
 //  console.log(`ДОБРОГО ДНЯ, МЕНЕ ЗВАТИ ${name}, МЕНІ ${age} РОКІВ, Я ВИВЧАЮ ${language}`);
+<<<<<<< Updated upstream
 
 // ЗАДАЧА 2
 // ЗАПИТАТИ У КОРИСТУВАЧА ІМЯ, ПОЧТУ , ТЕЛЕФОН, І ПОКАЗАТИ У КОНСОЛІ "КОРИСТУВАЧ __ ВИКОРИСТОВУЄ  __ ПОЧТУ І __ ТЕЛЕФОН"
@@ -45,3 +46,5 @@ const nummer = Number(prompt("Введіть число"));
 const message = nummer % 2 === 0 ? "парне" : "непарне";
 
 console.log(message);
+=======
+>>>>>>> Stashed changes
