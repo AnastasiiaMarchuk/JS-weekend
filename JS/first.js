@@ -36,13 +36,25 @@
 // }
 // ЗАДАЧА 5
 // НАПИШІТЬ ПРОГРАМУ, ЯКА ДОЗВОЛЯТИМЕ ЮЗЕРУ ВВОДИТИ ЧИСЛО І ОПРИДІЛЯТИМЕ ЧИ ЦЕ ПАРНЕ ЧИСЛО , ЧИ НЕ ПАРНЕ.
-const nummer = Number(prompt("Введіть число"));
+// const nummer = Number(prompt("Введіть число"));
 // if (nummer % 2 === 0) {
 //   console.log("парне");
 // } else {
 //   console.log("непарне");
 // }
-const message = nummer % 2 === 0 ? "парне" : "непарне";
+// const message = nummer % 2 === 0 ? "парне" : "непарне";
 
-console.log(message);
-----
+// console.log(message);
+const month = Number(promt("Ваш місяць народження:"));
+
+if (month === 1 || month === 2 || month === 12) {
+  console.log("Ви народилися взимку");
+} else if (month >= 3 && month <= 5) {
+  console.log("Ви народилися навесні");
+} else if (month >= 6 && month <= 8) {
+  console.log("Ви народилися влітку");
+} else if (month >= 9 && month <= 11) {
+  console.log("Ви народилися восени");
+} else {
+  console.log("Такого місяця не існує");
+}
