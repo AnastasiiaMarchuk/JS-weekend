@@ -81,7 +81,7 @@
 // ЯКЩО МІСЯЦЬ - ціна 10.99
 // ЯКЩО РІК - ціна 100.99
 
-const subscribe = prompt(`Ціна підписки`);
+// const subscribe = prompt(`Ціна підписки`);
 // if (subscribe === "День") {
 //   console.log("ціна 1.99");
 // } else if (subscribe === "НЕДІЛЯ") {
@@ -94,20 +94,20 @@ const subscribe = prompt(`Ціна підписки`);
 //   console.log("ТАКОЇ ПІДПИСКИ НЕ ІСНУЄ");
 // }
 
-switch (subscribe) {
-  case "День":
-    console.log("ціна 1.99");
-    break;
-  case "НЕДІЛЯ":
-    console.log("ціна 5.99");
-    break;
-  case "МІСЯЦЬ":
-    console.log("ціна 10.99");
-    break;
-  case "РІК":
-    console.log("ціна 100.99");
-    break;
-  default:
-    console.log("ТАКОЇ ПІДПИСКИ НЕ ІСНУЄ");
-    break;
-}
+// switch (subscribe) {
+//   case "День":
+//     console.log("ціна 1.99");
+//     break;
+//   case "НЕДІЛЯ":
+//     console.log("ціна 5.99");
+//     break;
+//   case "МІСЯЦЬ":
+//     console.log("ціна 10.99");
+//     break;
+//   case "РІК":
+//     console.log("ціна 100.99");
+//     break;
+//   default:
+//     console.log("ТАКОЇ ПІДПИСКИ НЕ ІСНУЄ");
+//     break;
+// }
