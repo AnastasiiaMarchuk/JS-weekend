@@ -45,16 +45,31 @@
 // const message = nummer % 2 === 0 ? "парне" : "непарне";
 
 // console.log(message);
-const month = Number(promt("Ваш місяць народження:"));
+//  const month = Number(prompt("Ваш місяць народження:"));
 
-if (month === 1 || month === 2 || month === 12) {
-  console.log("Ви народилися взимку");
-} else if (month >= 3 && month <= 5) {
-  console.log("Ви народилися навесні");
-} else if (month >= 6 && month <= 8) {
-  console.log("Ви народилися влітку");
-} else if (month >= 9 && month <= 11) {
-  console.log("Ви народилися восени");
-} else {
-  console.log("Такого місяця не існує");
-}
+// if (month === 1 || month === 2 || month === 12) {
+//    console.log("Ви народилися взимку");
+// } else if (month >= 3 && month <= 5) {
+//    console.log("Ви народилися навесні");
+// } else if (month >= 6 && month <= 8) {
+//    console.log("Ви народилися влітку");
+// } else if (month >= 9 && month <= 11) {
+//    console.log("Ви народилися восени");
+//  } else {
+//   console.log("Такого місяця не існує");
+// }
+// ЗАДАЧА 7
+// НАПИШІТЬ ПРОГРАМУ, ЯКА ПРОВІРЯЄ ЛОГІН І ПАРОЛЬ, І ВИВОДИТЬ ПРИВІТАННЯ - ЯКЩО ВСЕ ДОБРЕ, АБО ВИДАЄ ПОМИЛКУ , ЩО НЕ ВІРНИЙ ЛОГІН
+const password = 'iryna';
+const login = 'irynakhossain';
+const userPassword = prompt("Введіть пароль");
+const userLogin = prompt("Введіть логін");
+// if (userPassword === password && userLogin === login) {
+//     console.log('Дані вірні')
+    
+// } else {
+//     console.log(" Дані не вірні")
+// }
+const message =
+    userPassword === password && userLogin === login ? "Дані вірні" : 'Дані не вірні';
+console.log(message);
