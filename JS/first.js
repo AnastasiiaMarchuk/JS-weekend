@@ -45,3 +45,4 @@ const nummer = Number(prompt("Введіть число"));
 const message = nummer % 2 === 0 ? "парне" : "непарне";
 
 console.log(message);
+----
