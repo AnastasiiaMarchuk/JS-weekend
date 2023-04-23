@@ -60,16 +60,54 @@
 // }
 // ЗАДАЧА 7
 // НАПИШІТЬ ПРОГРАМУ, ЯКА ПРОВІРЯЄ ЛОГІН І ПАРОЛЬ, І ВИВОДИТЬ ПРИВІТАННЯ - ЯКЩО ВСЕ ДОБРЕ, АБО ВИДАЄ ПОМИЛКУ , ЩО НЕ ВІРНИЙ ЛОГІН
-const password = 'iryna';
-const login = 'irynakhossain';
-const userPassword = prompt("Введіть пароль");
-const userLogin = prompt("Введіть логін");
-// if (userPassword === password && userLogin === login) {
-//     console.log('Дані вірні')
-    
+// const password = 'iryna';
+// const login = 'irynakhossain';
+// const userPassword = prompt("Введіть пароль");
+// const userLogin = prompt("Введіть логін");
+// // if (userPassword === password && userLogin === login) {
+// //     console.log('Дані вірні')
+
+// // } else {
+// //     console.log(" Дані не вірні")
+// // }
+// const message =
+//     userPassword === password && userLogin === login ? "Дані вірні" : 'Дані не вірні';
+// console.log(message);
+
+// ЗАДАЧА 8
+// НАПИШІТЬ ПРОГРАМУ , ЯКА БУДЕ ЗАПИТУВАТИ У КОРИСТУВАЧА ПЕРІОД ПІДПИСКИ НА СЕРВІС ТА ПОКАЗУВАТИМЕ ЦІНУ ПІДПИСКИ(ВИКОРИСТАЙ IF..ELSE, ТА ПЕРЕПИШИ НА SWITCH)
+// ЯКЩО ДЕНЬ - ціна 1.99
+// ЯУЩО НЕДІЛЯ - ціна 5.99
+// ЯКЩО МІСЯЦЬ - ціна 10.99
+// ЯКЩО РІК - ціна 100.99
+
+const subscribe = prompt(`Ціна підписки`);
+// if (subscribe === "День") {
+//   console.log("ціна 1.99");
+// } else if (subscribe === "НЕДІЛЯ") {
+//   console.log("ціна 5.99");
+// } else if (subscribe === "МІСЯЦЬ") {
+//   console.log("ціна 10.99");
+// } else if (subscribe === "РІК") {
+//   console.log("ціна 100.99");
 // } else {
-//     console.log(" Дані не вірні")
+//   console.log("ТАКОЇ ПІДПИСКИ НЕ ІСНУЄ");
 // }
-const message =
-    userPassword === password && userLogin === login ? "Дані вірні" : 'Дані не вірні';
-console.log(message);
+
+switch (subscribe) {
+  case "День":
+    console.log("ціна 1.99");
+    break;
+  case "НЕДІЛЯ":
+    console.log("ціна 5.99");
+    break;
+  case "МІСЯЦЬ":
+    console.log("ціна 10.99");
+    break;
+  case "РІК":
+    console.log("ціна 100.99");
+    break;
+  default:
+    console.log("ТАКОЇ ПІДПИСКИ НЕ ІСНУЄ");
+    break;
+}
