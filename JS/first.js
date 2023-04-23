@@ -7,10 +7,18 @@
 
 // ЗАДАЧА 2
 // ЗАПИТАТИ У КОРИСТУВАЧА ІМЯ, ПОЧТУ , ТЕЛЕФОН, І ПОКАЗАТИ У КОНСОЛІ "КОРИСТУВАЧ __ ВИКОРИСТОВУЄ  __ ПОЧТУ І __ ТЕЛЕФОН"
-const name = prompt("імя");
-const email = prompt("пошта");
-const numder = prompt("телефон");
-console.log(
-  `КОРИСТУВАЧ ${name} ВИКОРИСТОВУЄ ${email} ПОЧТУ І ${numder} ТЕЛЕФОН`
-);
 
+// const name = prompt("імя");
+// const email = prompt("пошта");
+// const numder = prompt("телефон");
+// console.log(
+//   `КОРИСТУВАЧ ${name} ВИКОРИСТОВУЄ ${email} ПОЧТУ І ${numder} ТЕЛЕФОН`
+// );
+
+// ЗАДАЧА 3
+// ПОРАХУЙТЕ СУМУ ТОВАРІВ У КОРЗИНІ . ПОТРІБНО ВВЕСТИ СУМУ 3-Х ТОВАРІВ І ПОРАХУВАТИ ЇХ СУМУ
+
+// const computerPrise = +prompt("Ціна комп'ютера");
+// const phonePrise = Number(prompt("Ціна телефону"));
+// const blenderPrise = Number(prompt("Ціна блендера"));
+// console.log(computerPrise + phonePrise + blenderPrise);
