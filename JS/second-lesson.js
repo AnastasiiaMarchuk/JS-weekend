@@ -124,3 +124,22 @@
 // }
 
 // const checkNumbers = (a, b) => a > b ? `число ${a} більше ${b}` :  `число ${b} більше ${a}`
+
+
+
+// // ЗАДАЧА 8
+// // Напишіть ф-цію capitalize , яка буде приймати рядок і буде повертати новий рядок , де кожне слово буде з великої букви
+// console.log(capitalize('the quick brown fox'))// 'The Quick Brown Fox '
+
+
+// function capitalize(string) {
+//     const words = string.split(' ');
+//     const ajax = [];
+//     for (const word of words) {
+//         let name = word[0].toUpperCase();
+//         const banan = word.slice(1);
+//         const kiwi = `${name}${banan}`;
+//        ajax.push(kiwi);
+//     }
+//     return ajax.join(' ');
+// }
