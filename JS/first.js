@@ -45,6 +45,7 @@
 // const message = nummer % 2 === 0 ? "парне" : "непарне";
 
 // console.log(message);
+<<<<<<< Updated upstream
 //  const month = Number(prompt("Ваш місяць народження:"));
 
 // if (month === 1 || month === 2 || month === 12) {
@@ -113,3 +114,19 @@
 // }
 
 
+=======
+// const month = Number(prompt("Ваш місяць народження:"));
+
+// if (month === 1 || month === 2 || month === 12) {
+//   console.log("Ви народилися взимку");
+// } else if (month >= 3 && month <= 5) {
+//   console.log("Ви народилися навесні");
+// } else if (month >= 6 && month <= 8) {
+//   console.log("Ви народилися влітку");
+// } else if (month >= 9 && month <= 11) {
+//   console.log("Ви народилися восени");
+// } else {
+//   console.log("Такого місяця не існує");
+// }
+// Change code below this line
+>>>>>>> Stashed changes
