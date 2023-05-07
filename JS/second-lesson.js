@@ -141,31 +141,56 @@
 // addCourse(name) - добавляє курс у кінець колекції
 // removeCourse(name) - видаляє курс із колекції
 // updateCourse(oldName, newName)- змінює імя на нове
-const courses = ["HTML", "CSS", "JavaScript", "React", "PostgreSQL"];
+// const courses = ["HTML", "CSS", "JavaScript", "React", "PostgreSQL"];
 
-function addCourse(course) {
-  if (courses.includes(course)) {
-    console.log("У вас уже є такий курс");
-    return;
-  }
-  courses.push(course);
-}
-function removeCourse(course) {
-  let courseIndex = courses.indexOf(course);
-  if (courseIndex === -1) {
-    console.log("Курс з таким іменем не найдено");
-    return;
-  }
-  courses.splice(courseIndex, 1);
-}
+// function addCourse(course) {
+//   if (courses.includes(course)) {
+//     console.log("У вас уже є такий курс");
+//     return;
+//   }
+//   courses.push(course);
+// }
+// function removeCourse(course) {
+//   let courseIndex = courses.indexOf(course);
+//   if (courseIndex === -1) {
+//     console.log("Курс з таким іменем не найдено");
+//     return;
+//   }
+//   courses.splice(courseIndex, 1);
+// }
 
-function updateCourse(courseToDelete, courseToAdd) {
-  let oldName = courses.indexOf(courseToDelete);
-  courses.splice(oldName, 1, courseToAdd);
-}
-addCourse("Express"); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
-addCourse("CSS"); // 'У вас уже є такий курс'
-removeCourse("React"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
-removeCourse("Vue"); // 'Курс з таким іменем не найдено'
-updateCourse("Express", "NestJS"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
-console.log(courses);
+// function updateCourse(courseToDelete, courseToAdd) {
+//   let oldName = courses.indexOf(courseToDelete);
+//   courses.splice(oldName, 1, courseToAdd);
+// }
+// addCourse("Express"); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
+// addCourse("CSS"); // 'У вас уже є такий курс'
+// removeCourse("React"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
+// removeCourse("Vue"); // 'Курс з таким іменем не найдено'
+// updateCourse("Express", "NestJS"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
+// console.log(courses);
+
+
+// ЗАДАЧА 1
+// Напишіть скрипт,для обєкта user в послідовності:
+
+//  добавляє поле mood із значенням 'happy'
+// замінює значення hobby на 'skydiving'
+// замінює значення  premium на false
+// виводить отримане обєкта user в форматі ключ:значення використовуючи  Object.keys() и for...of
+
+//  const user = {
+//    name: "Mango",
+//    age: 20,
+//    hobby: "html",
+//    premium: true,
+// };
+
+// user.mood = 'happy';
+// user.hobby = 'skydiving';
+// user.premium = false;
+
+// let keys = Object.keys(user);
+// for(let key of keys) {
+//     console.log(`${key} : ${user[key]}`)
+// }
