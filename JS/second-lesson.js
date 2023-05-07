@@ -40,18 +40,26 @@
 // ЗАДАЧА 3
 // Напишіть код , який шукає саме найменше число в масиві
 // 1) напишіть циклом for
-const numbers = [2, 17, 94, 1, 23, 37];
-// 2) перепишіть функцією findSmallestNumber(numbers)
-console.log(findSmallestNumber([2, 17, 94, 1, 23, 37]));
-console.log(findSmallestNumber([49, 4, 83, 7, 12]));
-let minNumbers = numbers[0];
-for (let num of numbers) {
-  if (minNumbers > num) {
-    minNumbers = num;
-  }
-}
-console.log(minNumbers);
+// const numbers = [2, 17, 94, 1, 23, 37];
+// // 2) перепишіть функцією findSmallestNumber(numbers)
+// console.log(findSmallestNumber([2, 17, 94, 1, 23, 37]));
+// console.log(findSmallestNumber([49, 4, 83, 7, 12]));
+// let minNumbers = numbers[0];
+// for (let num of numbers) {
+//   if (minNumbers > num) {
+//     minNumbers = num;
+//   }
+// }
+// console.log(minNumbers);
 
-function findSmallestNumber(numbers) {
-  return Math.min(...numbers);
-}
+// function findSmallestNumber(numbers) {
+//   return Math.min(...numbers);
+// }
+// ЗАДАЧА 4
+//  Провірте , чи являється рядок полідромом
+const str = "ротатор"; //true
+const newString = "Hello"; //false
+const world = str.split("").reverse().join("");
+console.log(world === str);
+const string = newString.split("").reverse().join("");
+console.log(string === newString);
