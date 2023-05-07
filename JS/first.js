@@ -45,7 +45,7 @@
 // const message = nummer % 2 === 0 ? "парне" : "непарне";
 
 // console.log(message);
-<<<<<<< Updated upstream
+
 //  const month = Number(prompt("Ваш місяць народження:"));
 
 // if (month === 1 || month === 2 || month === 12) {
@@ -113,8 +113,6 @@
 //     break;
 // }
 
-
-=======
 // const month = Number(prompt("Ваш місяць народження:"));
 
 // if (month === 1 || month === 2 || month === 12) {
@@ -129,4 +127,3 @@
 //   console.log("Такого місяця не існує");
 // }
 // Change code below this line
->>>>>>> Stashed changes
