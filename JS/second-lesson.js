@@ -194,3 +194,23 @@
 // for(let key of keys) {
 //     console.log(`${key} : ${user[key]}`)
 // }
+// ЗАДАЧА 2
+// У вас є обєкт , у якому зберігаються зарплати нашої команди.
+// Напишіть код , для підрахунку всіх зарплат і збережіть результат в змінні sum
+// Повинно получитись 390, якщо обєкт salaries пустий , то результат буде 0
+// ЩОБ МОЖНА БУЛО ПЕРЕВИКОРИСТОВУВАТИ ЛОГІКУ, ТОМУ ПИШЕМО ФУНКЦІЮ
+// const salaries = {
+//    John: 100,
+//    Ann: 160,
+//    Pete: 130,
+// };
+// function calculateAverage(salaries) {
+//     const values = Object.values(salaries);
+//     let total = 0;
+//     for (let value of values) {
+//         total += value
+//     }
+//     return total;
+    
+// }
+// console.log(calculateAverage(salaries));
