@@ -176,3 +176,72 @@
 //     (sentist.born > 1800 && sentist.born < 1900) || sentist.dead > 1800
 // );
 // console.log(name);
+
+// ЗАДАЧА 4
+// Сортування примітивів.
+// Виконати сортування масиву цін зі спадання та зростання.
+
+// const prices = [2, 14, 1, 37, 26, 8];
+// const increase = [...prices].sort((a, b) => a - b);
+// console.log(increase);
+// const decrease = [...prices].sort((a, b) => b - a);
+// console.log(decrease);
+
+// ЗАДАЧА 5
+// Виконати сортування масиву назв моніторів в алфавітному та зворотному алфавітному порядку.
+
+// const items = ["SAMSUNG", "LG", "ASUS", "DELL", "BENQ"];
+
+// const name = [...items].sort((a, b) => (a > b ? 1 : -1));
+// console.log(name);
+// const nameReverse = [...items].sort((a, b) => (a > b ? -1 : 1));
+// console.log(nameReverse);
+
+// ЗАДАЧА 6
+// Зібрати в allTopics масив усіх предметів всіх курсів використовуючи flatMap.
+// Використовуючи Array.prototype.filter виконати фільтрацію, залишивши в uniqueTopics тільки унікальні елементи.
+
+const courses = [
+  {
+    name: "Basic HTML+CSS",
+    topics: ["VSCode", "HTML", "CSS", "GitHub Desktop", "GitHub"],
+  },
+  {
+    name: "Intermediate HTML+CSS",
+    topics: ["VSCode", "Terminal", "Git", "GitHub", "HTML", "CSS"],
+  },
+  {
+    name: "Basic JavaScript",
+    topics: [
+      "VSCode",
+      "Type system",
+      "Loops",
+      "Functions",
+      "Conditions",
+      "Classes",
+      "DOM",
+      "Git",
+      "GitHub",
+    ],
+  },
+  {
+    name: "Intermediate JavaScript",
+    topics: [
+      "VSCode",
+      "NPM",
+      "Bundlers",
+      "Transpiling",
+      "Promises",
+      "AJAX",
+      "Git",
+      "GitHub",
+    ],
+  },
+];
+
+const array = courses.flatMap((course) => course.topics);
+console.log(array);
+const newArray = array.filter(
+  (topics, index, arr) => arr.indexOf(topics) === index
+);
+console.log(newArray);
