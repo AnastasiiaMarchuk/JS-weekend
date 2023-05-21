@@ -305,3 +305,33 @@
 // Клас очікує один параметр - об'єкт налаштувань з однойменними властивостями.
 // Добавте метод getInfo(), який повертає рядок:
 // User ${ імя } is ${ вік } years old and has ${ кількість постів } posts.
+
+
+// ЗАДАЧА 2
+// Напишіть клас User для створення користувача з наступними властивостями:
+// username - імя, рядок
+// age - вік, число
+// numberOfPosts - кількість постів, число
+// Клас очікує один параметр - об'єкт налаштувань з однойменними властивостями.
+// Добавте метод getInfo(), який повертає рядок:
+// User ${ імя } is ${ вік } years old and has ${ кількість постів } posts.
+
+
+// class User {
+//     constructor({ username, age, numberOfPosts }) {
+//         this.username = username;
+//         this.age = age;
+//         this.numberOfPosts = numberOfPosts;
+//     }
+//     getInfo() {
+//         return `User ${ this.username } is ${ this.age } years old and has ${ this.numberOfPosts } posts`;
+//     }
+//       getInfo2 = () => {
+//         return `User ${ this.username } is ${ this.age } years old and has ${ this.numberOfPosts } posts`;
+//     }
+
+// };
+
+// const number = new User({ username: 'Artur', age: 33, numberOfPosts: 5, })
+// console.log(number.getInfo())
+// console.log(number)
