@@ -11,6 +11,7 @@
 //     console.log(`Привіт ${name}`)
 // }
 
+
 // letMeSeeYourName(greet)
 
 // ЗАДАЧА 2
@@ -201,47 +202,106 @@
 // Зібрати в allTopics масив усіх предметів всіх курсів використовуючи flatMap.
 // Використовуючи Array.prototype.filter виконати фільтрацію, залишивши в uniqueTopics тільки унікальні елементи.
 
-const courses = [
-  {
-    name: "Basic HTML+CSS",
-    topics: ["VSCode", "HTML", "CSS", "GitHub Desktop", "GitHub"],
-  },
-  {
-    name: "Intermediate HTML+CSS",
-    topics: ["VSCode", "Terminal", "Git", "GitHub", "HTML", "CSS"],
-  },
-  {
-    name: "Basic JavaScript",
-    topics: [
-      "VSCode",
-      "Type system",
-      "Loops",
-      "Functions",
-      "Conditions",
-      "Classes",
-      "DOM",
-      "Git",
-      "GitHub",
-    ],
-  },
-  {
-    name: "Intermediate JavaScript",
-    topics: [
-      "VSCode",
-      "NPM",
-      "Bundlers",
-      "Transpiling",
-      "Promises",
-      "AJAX",
-      "Git",
-      "GitHub",
-    ],
-  },
-];
+// const courses = [
+//   {
+//     name: "Basic HTML+CSS",
+//     topics: ["VSCode", "HTML", "CSS", "GitHub Desktop", "GitHub"],
+//   },
+//   {
+//     name: "Intermediate HTML+CSS",
+//     topics: ["VSCode", "Terminal", "Git", "GitHub", "HTML", "CSS"],
+//   },
+//   {
+//     name: "Basic JavaScript",
+//     topics: [
+//       "VSCode",
+//       "Type system",
+//       "Loops",
+//       "Functions",
+//       "Conditions",
+//       "Classes",
+//       "DOM",
+//       "Git",
+//       "GitHub",
+//     ],
+//   },
+//   {
+//     name: "Intermediate JavaScript",
+//     topics: [
+//       "VSCode",
+//       "NPM",
+//       "Bundlers",
+//       "Transpiling",
+//       "Promises",
+//       "AJAX",
+//       "Git",
+//       "GitHub",
+//     ],
+//   },
+// ];
 
-const array = courses.flatMap((course) => course.topics);
-console.log(array);
-const newArray = array.filter(
-  (topics, index, arr) => arr.indexOf(topics) === index
-);
-console.log(newArray);
+// const array = courses.flatMap((course) => course.topics);
+// console.log(array);
+// const newArray = array.filter(
+//   (topics, index, arr) => arr.indexOf(topics) === index
+// );
+// console.log(newArray);
+
+// letMeSeeYourName(greet)
+
+
+// ЗАДАЧА 1
+// 1) Напишіть ф - ю конструктор яка створює обєкт person з такимим ключами:
+// const Person = {
+//   firstName,
+//   lastName,
+//   age,
+//   gender,
+//   interest,
+//   bio() {
+//     // виводить рядок Привіт {імя} мені {вік} років. Мені подобається {інтерес}
+//   },
+//   greeting() {
+//     // Привіт, я {імя}
+//   },
+// };
+
+// function Person ({ 
+// firstName,
+// lastName,
+// age,
+// gender,
+// interest}){
+// this.firstName = firstName;
+// this.lastName = lastName;
+// this.age = age;
+// this.gender = gender;
+// this.interest = interest;
+// Person.prototype.bio = function(){
+//     console.log(`Привіт ${this.firstName} мені ${this.age} років. Мені подобається ${this.interest}`)
+// },
+// Person.prototype.greeting = function(){
+//     console.log(`Привіт, я ${this.firstName}`)
+// }   
+// }
+
+// const user = new Person({
+//     firstName: 'Nico',
+//     lastName: 'Stahl',
+//     age: 25,
+//     gender: 'man',
+//     interest: 'fishing'
+// })
+
+// console.log(user)
+// user.greeting()
+// user.bio()
+
+// ЗАДАЧА 2
+// Напишіть клас User для створення користувача з наступними властивостями:
+// username - імя, рядок
+// age - вік, число
+// numberOfPosts - кількість постів, число
+// Клас очікує один параметр - об'єкт налаштувань з однойменними властивостями.
+// Добавте метод getInfo(), який повертає рядок:
+// User ${ імя } is ${ вік } years old and has ${ кількість постів } posts.
