@@ -11,7 +11,6 @@
 //     console.log(`Привіт ${name}`)
 // }
 
-
 // letMeSeeYourName(greet)
 
 // ЗАДАЧА 2
@@ -21,15 +20,17 @@
 // makeProduct("Холодильник", 10000, logger);
 
 // function makeProduct(name, price, callback) {
-//     const products = {
-// name, price, id: Date.now()
-//     }
-//     callback(products);
-// };
+//   const products = {
+//     name,
+//     price,
+//     id: Date.now(),
+//   };
+//   callback(products);
+// }
 
 // function showProduct(products) {
-//     console.log(products);
-// };
+//   console.log(products);
+// }
 
 // makeProduct("Холодильник", 10000, showProduct);
 
@@ -249,7 +250,6 @@
 
 // letMeSeeYourName(greet)
 
-
 // ЗАДАЧА 1
 // 1) Напишіть ф - ю конструктор яка створює обєкт person з такимим ключами:
 // const Person = {
@@ -266,7 +266,7 @@
 //   },
 // };
 
-// function Person ({ 
+// function Person ({
 // firstName,
 // lastName,
 // age,
@@ -282,7 +282,7 @@
 // },
 // Person.prototype.greeting = function(){
 //     console.log(`Привіт, я ${this.firstName}`)
-// }   
+// }
 // }
 
 // const user = new Person({
@@ -306,7 +306,6 @@
 // Добавте метод getInfo(), який повертає рядок:
 // User ${ імя } is ${ вік } years old and has ${ кількість постів } posts.
 
-
 // ЗАДАЧА 2
 // Напишіть клас User для створення користувача з наступними властивостями:
 // username - імя, рядок
@@ -315,7 +314,6 @@
 // Клас очікує один параметр - об'єкт налаштувань з однойменними властивостями.
 // Добавте метод getInfo(), який повертає рядок:
 // User ${ імя } is ${ вік } years old and has ${ кількість постів } posts.
-
 
 // class User {
 //     constructor({ username, age, numberOfPosts }) {
@@ -336,12 +334,9 @@
 // console.log(number.getInfo())
 // console.log(number)
 
-
 // ЗАДАЧА 4
 // Напиши клас Client який створює об'єкт із властивостями login і email.
 // Оголоси приватні властивості #login і #email, доступ до яких зроби через геттер та сеттер login і email.
-
-
 
 // ЗАДАЧА НА ЗАМИКАННЯ 5
 // У вас є функція counter(), яка повинна повернути нове значення лічильника кожного разу, коли вона викликається. Проте, коли ви викликаєте counter() два рази, вона повертає одне і те ж значення. Ви хочете, щоб кожен виклик counter() повертав нове значення лічильника. Використовуючи замикання, напишіть функцію, яка розв'язує цю проблему.
