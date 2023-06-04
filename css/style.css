@@ -5,3 +5,7 @@
 .gallery li {
   outline: 1px solid red;
 }
+
+.class-ul {
+  color: red;
+}
