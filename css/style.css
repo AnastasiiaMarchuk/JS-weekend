@@ -1,0 +1,7 @@
+.gallery {
+  display: flex;
+  gap: 24px;
+}
+.gallery li {
+  outline: 1px solid red;
+}
