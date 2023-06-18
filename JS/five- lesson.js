@@ -35,5 +35,5 @@ function callback() {
     video.play();
   }
   let observer = new IntersectionObserver(callback, { threshold: 0.5 });
-  observer.observer(video);
+  observer.observe(video);
 }
