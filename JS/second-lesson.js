@@ -241,41 +241,41 @@
 // calculator.read();
 // console.log(`sum`, calculator.sum());
 // console.log(`mult`, calculator.mult());
-const atTheOldToad = {
-  potions: [
-    { name: "Speed potion", price: 460 },
-    { name: "Dragon breath", price: 780 },
-    { name: "Stone skin", price: 520 },
-  ],
-  // Change code below this line
-  getPotions() {
-    return this.potions;
-  },
-  addPotion(newPotion) {
-    for (let potion of this.potions) {
-      if (potion.name === newPotion.name) {
-        return (
-          "Error! Potion " + newPotion.name + " is already in your inventory!"
-        );
-      }
-    }
-    this.potions.push(newPotion);
-  },
-  removePotion(potionName) {
-    for (let i = 0; i < this.potions.length; i++) {
-      if (this.potions[i].name === potionName) {
-        this.potions.splice(i, 1);
-        break;
-      }
-    }
-  },
-  updatePotionName(oldName, newName) {
-    for (let potion of this.potions) {
-      if (potion.name === oldName) {
-        potion.name = newName;
-        break;
-      }
-    }
-  },
-  // Change code above this line
-};
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Dragon breath", price: 780 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+//   // Change code below this line
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(newPotion) {
+//     for (let potion of this.potions) {
+//       if (potion.name === newPotion.name) {
+//         return (
+//           "Error! Potion " + newPotion.name + " is already in your inventory!"
+//         );
+//       }
+//     }
+//     this.potions.push(newPotion);
+//   },
+//   removePotion(potionName) {
+//     for (let i = 0; i < this.potions.length; i++) {
+//       if (this.potions[i].name === potionName) {
+//         this.potions.splice(i, 1);
+//         break;
+//       }
+//     }
+//   },
+//   updatePotionName(oldName, newName) {
+//     for (let potion of this.potions) {
+//       if (potion.name === oldName) {
+//         potion.name = newName;
+//         break;
+//       }
+//     }
+//   },
+//   // Change code above this line
+// };
